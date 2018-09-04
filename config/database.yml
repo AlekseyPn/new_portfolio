@@ -1,0 +1,22 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: localhost
+  port: 5432
+  user: postgres
+
+development:
+  <<: *default
+  database: devCamp_portfolio_development
+
+test:
+  <<: *default
+  database: devCamp_portfolio_test
+
+production:
+  <<: *default
+  database: devCamp_portfolio_production
+  username: devCamp_portfolio
+  password: <%= ENV['DEVCAMP_PORTFOLIO_DATABASE_PASSWORD'] %>
