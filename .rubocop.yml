@@ -1,0 +1,119 @@
+
+AllCops:
+  TargetRubyVersion: 2.4.1
+
+  Exclude:
+    - config/**/*
+    - Gemfile
+    - bin/*
+    - bundle/**/*
+    - app/helpers/*
+    - app/channels/**/*
+    - vendor/**/*
+
+    - spec/**/*
+    - db/**/*
+    - config.ru
+    - Rakefile
+    - app/jobs/**/*
+    - app/mailers/**/*
+    - spec/fixtures/**/*
+    - node_modules/**/*
+
+
+  DisplayCopNames: true
+
+Metrics/LineLength:
+  Max: 180
+  Exclude:
+    - spec/**/*.rb
+    - db/seeds.rb
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*.rb
+    - app/api/**/*.rb
+    - lib/tasks/**/*.rake
+    - config/routes.rb
+    - config/environments/*
+
+Rails/UnknownEnv:
+  Environments:
+    - production
+    - test
+    - development
+    - stage
+    - milestone
+
+Style/BlockDelimiters:
+  Exclude:
+    - spec/**/*.rb
+
+Style/RedundantSelf:
+  Exclude:
+    -  app/models/teacher.rb
+    
+Naming/MethodName:
+  Enabled: false
+
+Rails:
+  Enabled: true
+
+Metrics/AbcSize:
+  Max: 22
+
+Metrics/PerceivedComplexity:
+  Max: 8
+
+Metrics/CyclomaticComplexity:
+  Max: 7
+
+Metrics/ParameterLists:
+  Max: 10
+
+Metrics/MethodLength:
+  Max: 15
+  Exclude:
+    - db/migrate/**/*
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    default: ()
+    '%i': '[]'
+    '%I': '[]'
+    '%r': '{}'
+    '%w': '()'
+    '%W': '()'
+
+Style/RegexpLiteral:
+  Enabled: false
+
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Metrics/ClassLength:
+  Max: 200
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Rails/Date:
+  Enabled: false
+
+Rails/TimeZone:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+Rails/SkipsModelValidations:
+  Enabled: false
+
+Rails/NotNullColumn:
+  Enabled: false
+
+Style/FormatStringToken:
+  EnforcedStyle: template
