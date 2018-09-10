@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class PortfoliosController < ApplicationController
-  before_action :set_portfolio_item, only: %i[show edit update]
+  before_action :set_portfolio_item, only: %i[show edit update destroy]
 
   def index
     @portfolio_items = Portfolio.all
@@ -36,6 +36,13 @@ class PortfoliosController < ApplicationController
   end
 
   def show; end
+
+  def destroy
+    @portfolio_item.destroy
+    respond_to do |format|
+      format.html { redirect_to portfolios_url, notice: 'Record was removed.' }
+    end
+  end
 
   def portfolio_params
     params.require(:portfolio).permit(:title, :subtitle, :body)
