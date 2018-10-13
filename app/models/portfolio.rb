@@ -1,4 +1,6 @@
 class Portfolio < ApplicationRecord
+  include Placeholder
+
   validates :title, :body, :main_image, :thumb_image, presence: true
 
   def self.angular
@@ -11,7 +13,7 @@ class Portfolio < ApplicationRecord
 
   def set_defaults
     # it says for example if main image equal nil, set default url
-    self.main_image ||= 'https://via.placeholder.com/600x400'
-    self.thumb_image ||= 'https://via.placeholder.com/350x200'
+    self.main_image ||= Placeholder.image_generator(width: '600', height: '400')
+    self.thumb_image ||= Placeholder.image_generator(width: '350', height: '200')
   end
 end
