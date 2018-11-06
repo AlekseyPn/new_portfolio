@@ -15,4 +15,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: 'source-greeting')
     end
   end
+
+  def copyright_generator
+    FargustianViewTool::Rendered.copyright 'Aleksey Peresmekhin', 'All right reserved'
+  end
 end
