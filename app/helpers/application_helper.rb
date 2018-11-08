@@ -17,6 +17,6 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    FargustianViewTool::Rendered.copyright 'Aleksey Peresmekhin', 'All right reserved'
+    DevcampViewTool::Renderer.copyright 'Aleksey Peresmekhin', 'All right reserved'
   end
 end
