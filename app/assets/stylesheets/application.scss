@@ -19,8 +19,8 @@ a:hover {
   text-shadow: none;
   /* Prevent inheritance from `body` */
 
-  background-color: #ffffff;
-  border: 0.05rem solid #ffffff;
+  background-color: $white;
+  border: 0.05rem solid $white;
 }
 
 
@@ -116,4 +116,11 @@ body {
  */
 .mastfoot {
   color: rgba(255, 255, 255, 0.5);
+}
+
+/*
+ * Custom styles
+ */
+.card-body {
+  color: $black;
 }
