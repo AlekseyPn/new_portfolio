@@ -122,10 +122,18 @@ body {
  * Custom styles
  */
 .card-body {
+  text-align: left;
   color: $black;
-  text-align-last: left;
 }
 
 .auth-links a {
   color: $black;
+}
+
+.register-text {
+  text-align: right;
+}
+
+.login > .card {
+  width: 22rem;
 }
