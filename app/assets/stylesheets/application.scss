@@ -123,4 +123,9 @@ body {
  */
 .card-body {
   color: $black;
+  text-align-last: left;
+}
+
+.auth-links a {
+  color: $black;
 }
