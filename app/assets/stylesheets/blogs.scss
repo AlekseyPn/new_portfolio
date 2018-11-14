@@ -66,6 +66,11 @@ h6 {
   font-size: 0.875rem;
 }
 
+.nav .active {
+  color: $black !important;
+  text-decoration: underline;
+}
+
 .card-img-right {
   height: 100%;
 
