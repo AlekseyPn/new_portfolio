@@ -18,7 +18,9 @@ ready = ->
     $.ajax
       type: 'PUT',
       url: '/portfolios/sort'
-      data: order: updated_order
+      data: 
+        authenticity_token: $('[name="csrf-token"]')[0].content
+        order: updated_order
     return
   return
 
