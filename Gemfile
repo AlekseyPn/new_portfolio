@@ -40,12 +40,26 @@ gem 'devise', '~> 4.5'
 gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
 
+# tool for view
 gem 'devcamp_view_tool', '~> 0.1.0'
+
+# app permissions
 gem 'petergate', '~> 2.0', '>= 2.0.1'
 
+# icons
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
+
+# pagination
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
 gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
+
+# Upload file in app
+gem 'carrierwave', '~> 0.11.2'
+gem 'carrierwave-aws', '~> 1.3'
+#manipulate image with minimals usage of memory
+gem 'mini_magick', '~> 4.9', '>= 4.9.3'
+
+gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

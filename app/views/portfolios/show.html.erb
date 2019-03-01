@@ -1,8 +1,8 @@
-<main  role="main">
+<main  role="main" class="portfolio-container">
   <section class="container">
     <div class="row">
       <div class="col-md-7">
-        <%= image_tag @portfolio_item.main_image, size: '600x400', alt: 'Portfolio preview' %>
+        <%= image_tag @portfolio_item.main_image.url, size: '600x400', alt: 'Portfolio preview' %>
       </div>
       <div class="col-md-5">
         <h1><%= @portfolio_item.title %></h1>

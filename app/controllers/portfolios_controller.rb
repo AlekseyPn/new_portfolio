@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 class PortfoliosController < ApplicationController
-  before_action :set_portfolio_item, only: %i[show edit update destroy]
   layout 'portfolio'
+  before_action :set_portfolio_item, only: %i[show edit update destroy]
   access all: %i[show index angular], user: { except: %i[destroy create new update edit sort] }, site_admin: :all
-
+  
   def index
     @portfolio_items = Portfolio.by_position
   end
@@ -63,6 +63,8 @@ class PortfoliosController < ApplicationController
   def portfolio_params
     params.require(:portfolio).permit(:title,
                                       :subtitle,
+                                      :main_image,
+                                      :thumb_image,
                                       :body,
                                       technologies_attributes: [:name])
   end
