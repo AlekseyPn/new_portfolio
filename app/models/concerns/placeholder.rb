@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
 module Placeholder
-  extend ActiveSupport::Concern
-
-  def self.image_generator(width:, height:)
-    "https://via.placeholder.com/#{width}x#{height}"
-  end
+  extend ActiveSupport::Concern  
 end
