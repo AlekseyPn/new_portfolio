@@ -5,6 +5,7 @@
  * Maintained by Lukas Oppermann <lukas@vea.re>
  *
  * Released under the MIT license.
+ * Drag`n`Drop interface for portfolio items
  */
 var sortable = (function () {
   'use strict';
