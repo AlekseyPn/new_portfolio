@@ -8,6 +8,6 @@ class Blog < ApplicationRecord
   extend FriendlyId
   friendly_id :title, use: :slugged
 
-  belongs_to :topic
+  belongs_to :topic, optional: true
   validates :title, :body, presence: true
 end
