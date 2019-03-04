@@ -39,6 +39,9 @@ gem 'cocoon', '~> 1.2', '>= 1.2.9'
 # validation form
 gem 'gritter', '~> 1.2'
 
+#twitter module
+gem 'twitter', '~> 6.2'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-byebug'
