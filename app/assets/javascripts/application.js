@@ -14,6 +14,7 @@
 //= require activestorage
 //= require html.sortable
 //= require turbolinks
+//= require cable
 //= require jquery3
 //= require jquery-ui
 //= require cocoon

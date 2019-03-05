@@ -42,6 +42,8 @@ gem 'gritter', '~> 1.2'
 #twitter module
 gem 'twitter', '~> 6.2'
 
+#redis db
+gem 'redis', '~> 4.1'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-byebug'
