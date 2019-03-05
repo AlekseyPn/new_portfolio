@@ -158,11 +158,16 @@ body {
 }
 .tech-news {
  color: black;
+ text-shadow: none;
  margin: 20px; 
 }
 
 .tweet-link {
   color: #1DA1F2;
+  text-shadow: none;
+  &:hover {
+    color: darken(#1DA1F2, 10)
+  }
 }
 
 .tech-news > .card {
