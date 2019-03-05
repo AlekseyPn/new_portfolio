@@ -2,10 +2,14 @@
 @import "font-awesome";
 @import "gritter";
 
-.blog-header {
-  line-height: 1;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  
+}
 
-  border-bottom: 1px solid #e5e5e5;
+.blog-container {
+  flex: 1 0 auto;
 }
 
 .blog-header-logo {
