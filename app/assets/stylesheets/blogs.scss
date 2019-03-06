@@ -165,3 +165,13 @@ h6 {
 .social-links li {
   font-size: 1.5em;
 }
+
+.comment-attribution {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.8em;
+  font-style: italic;
+}
+.comment-name {
+  font-weight: bold;
+}
