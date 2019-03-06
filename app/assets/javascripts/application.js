@@ -16,6 +16,7 @@
 //= require turbolinks
 //= require jquery3
 //= require jquery-ui
+//= require cable
 //= require cocoon
 //= require gritter
 //= require popper
