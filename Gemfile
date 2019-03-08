@@ -44,6 +44,10 @@ gem 'twitter', '~> 6.2'
 
 #redis db
 gem 'redis', '~> 4.1'
+
+gem 'redcarpet', '~> 3.4'
+gem 'coderay', '~> 1.1', '>= 1.1.2'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-byebug'
