@@ -8,9 +8,9 @@ class Blog < ApplicationRecord
   extend FriendlyId
   friendly_id :title, use: :slugged
 
-  belongs_to :topic, optional: true
+  belongs_to :topic
   has_many :comments, dependent: :destroy
-  validates :title, :body, presence: true
+  validates :title, :body, :topic_id, presence: true
 
   def self.recent
     order('created_at DESC')
