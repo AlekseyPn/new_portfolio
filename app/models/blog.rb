@@ -11,4 +11,8 @@ class Blog < ApplicationRecord
   belongs_to :topic, optional: true
   has_many :comments, dependent: :destroy
   validates :title, :body, presence: true
+
+  def self.recent
+    order('created_at DESC')
+  end
 end
