@@ -25,5 +25,6 @@ module DevCampPortfolio
     config.load_defaults 5.2
     config.generators.system_tests = nil
     config.eager_load_paths << "#{Rails.root}/lib"
+    config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
   end
 end

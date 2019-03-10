@@ -6,6 +6,16 @@
  * Globals
  */
 
+ @font-face {
+  font-family: 'Lato';
+  src:font-url('Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src:font-url('RobotoSlab-Regular.ttf');
+}
+
 /* Links */
 a,
 a:focus,
@@ -29,16 +39,16 @@ a:hover {
 /*
  * Base structure
  */
-
 html,
 body {
   height: 100%;
+  font-family: 'Lato', sans-serif;
 }
 
 body {
   display: -ms-flexbox;
   display: flex;
-
+  
   color: #ffffff;
   text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
 
@@ -49,6 +59,14 @@ body {
   max-width: 65em;
 }
 
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto Slab', serif;
+}
 
 /*
  * Header
