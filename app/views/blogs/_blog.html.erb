@@ -3,5 +3,5 @@
   <p class="blog-post-meta">Published <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago</p>
   <%= render 'blogs/admin_actions', blog: blog %>
 
-  <p><%= blog.body %></p>  
+  <p><%= markdown blog.body %></p>  
 </article>
