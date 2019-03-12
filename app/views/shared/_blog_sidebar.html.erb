@@ -6,14 +6,16 @@
 
   <%= source_helper('alert alert-info mt-3') %>  
 
-  <div class="p-3">
-    <h4 class="font-italic">Topics</h4>
-    <ol class="list-unstyled mb-0">
-      <% @sidebar_topics.each do |topic| %>
-        <li><%= link_to topic.title, topic_path(topic) %></li>
-      <% end %>
-    </ol>
-  </div>
+  <%= if @sidebar_topics %>
+    <div class="p-3">
+      <h4 class="font-italic">Topics</h4>
+      <ol class="list-unstyled mb-0">
+        <% @sidebar_topics.each do |topic| %>
+          <li><%= link_to topic.title, topic_path(topic) %></li>
+        <% end %>
+      </ol>
+    </div>
+  <% end %>  
 
   <div class="p-3">
     <h4 class="font-italic">Elsewhere</h4>
