@@ -1,25 +1,12 @@
-# My new portfolio
+# Example of developer portfolio by RoR course from udemy.
 
-> This is Ruby on Rails 5 application that allows users to creata their own portfolios
+[Link to web site](https://fargustian-portfolio.herokuapp.com/)
 
-### Features
+### Used technologies
 
-- Real time chat engine for comments
-- Blog
-- Portfolio
-- Drag and drop interface
-
-### Code Example
-
-```ruby
-def my_great_methods
-    puts 'here it is'
-end
-```
-
-
-```javascript
-function() {
-    return 'Hello world'
-}
-```
+- Ruby on Rails
+- Postgresql
+- Redis
+- Javascript
+- SCSS
+- Bootstrap
